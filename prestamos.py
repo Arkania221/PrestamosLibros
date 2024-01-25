@@ -17,10 +17,10 @@ while True:
         else:
             print("libro no encontrado")
     elif Seleccion == 3: #Solo printea la lista de libros
-        for libros in libros:
-            print("Nombre:" + libros)
-        for libros_prestados in libros_prestados:
-            print("Prestamo" + libros_prestados)
+        for libro in libros:
+            print("Nombre:" + libro)
+        for prestamo in libros_prestados:
+            print("Prestamo" + prestamo)
     elif Seleccion == 4: #Primero recoge el valor persona, recoge el valor libro, si el libro existe mezcla los dos valores mas ":" y borra el libro de la lista libros
         print("a quien va prestado?")
         persona = input()
@@ -36,7 +36,7 @@ while True:
         libro = input()
         libro_prestado = (persona + ":" + libro)
         if libro_prestado in libros_prestados:
-            libros_prestados.remove(persona + ":" + libro)
+            libros_prestados.remove(libro_prestado)
             libros.append(libro)
         else:
             print("no esta")
