@@ -1,7 +1,7 @@
 libros = []
-
+libros_prestados = []
 while True:
-    print("Selecciona una opcion: Añadir libros = 1, Eliminar libros = 2, Mostrar libros = 3")
+    print("Selecciona una opcion: Añadir libros = 1, Eliminar libros = 2, Mostrar libros = 3, Prestar libro = 4")
 
     Seleccion = int(input())
 
@@ -18,6 +18,11 @@ while True:
             print("libro no encontrado")
     elif Seleccion == 3: #Solo printea la lista de libros
         print(libros)
+    elif Seleccion = 4:
+        print("a quien va prestado?")
+        persona = input()
+        print("Que libro va a ser prestado?")
+        if libro in
     else:
         print("Opcion invalida")
         
